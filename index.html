@@ -1,0 +1,239 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+ </head>
+ <body>
+    <main>
+      <div class="sidebar text--primary">
+         <div class="sidebar__logo">
+           <iconify-icon class="icon" icon="material-symbols:dashboard"></iconify-icon>
+           <p class="text--huge">Dashboard</p>
+         </div>
+         <div class="sidebar__main-navigation text--big">
+           <div class="sidebar__item sidebar--home">
+              <iconify-icon class="sidebar__icon" icon="ic:baseline-home"></iconify-icon>
+              <p>Home</p>
+           </div>
+           <div class="sidebar__item sidebar--profile">
+              <iconify-icon class="sidebar__icon" icon="mingcute:profile-fill"></iconify-icon>
+              <p>Profile</p>
+           </div>
+           <div class="sidebar__item sidebar--message">
+              <iconify-icon class="sidebar__icon" icon="mdi:message"></iconify-icon>
+              <p>Message</p>
+           </div>
+           <div class="sidebar__item sidebar--history">
+              <iconify-icon class="sidebar__icon" icon="tdesign:chat-bubble-history-filled"></iconify-icon>
+              <p>History</p>
+           </div>
+           <div class="sidebar__item sidebar--tasks">
+              <iconify-icon class="sidebar__icon" icon="tdesign:task-double-filled"></iconify-icon>
+              <p>Tasks</p>
+           </div>
+           <div class="sidebar__item sidebar--communities">
+              <iconify-icon class="sidebar__icon" icon="fluent:people-community-12-filled"></iconify-icon>
+              <p>Communities</p>
+           </div>
+         </div>
+         <div class="sidebar__secondary-navigation text--big">
+           <div class="sidebar__item sidebar--settings">
+              <iconify-icon class="sidebar__icon" icon="tdesign:setting-filled"></iconify-icon>
+              <p>Setting</p>
+           </div>
+           <div class="sidebar__item sidebar--support">
+              <iconify-icon class="sidebar__icon" icon="material-symbols:contact-support"></iconify-icon>
+              <p>Support</p>
+           </div>
+           <div class="sidebar__item sidebar--privacy">
+              <iconify-icon class="sidebar__icon" icon="material-symbols:privacy-tip"></iconify-icon>
+              <p>Privacy</p>
+           </div>
+         </div>
+      </div>
+      <div class="header">
+         <div class="header__search-box">
+            <div class="header__search-icon">
+               <iconify-icon icon="material-symbols:search" width="24" height="24"></iconify-icon>
+            </div>
+            <form action="#" class="header__search-textbox">
+               <input type="text" id="searchTextBox" name="search" value="">  
+            </form>
+         </div>
+         <div class="header__user-and-setting">
+            <div class="header__bell-icon">
+               <iconify-icon icon="mdi:bell-ring-outline" width="24" height="24"></iconify-icon>
+            </div>
+            <div class="header__user-profile header__user-profile-container--small">
+               <img src="https://clipart-library.com/images/qcBorqyXi.gif" alt="user profile">
+            </div>
+            <div class="header_user-name header__user-name--small text--primary text--medium">Morgan Oakley</div>
+         </div>
+         <div class="header__user-welcome">
+            <div class="header__user-profile header__user-profile-container--big">
+               <img src="https://clipart-library.com/images/qcBorqyXi.gif" alt="user profile">
+            </div>
+            <div class="header__welcome-message text--primary">
+               <p class="text--extra-small">Hi there, </p>
+               <div class="header_user-name header__user-name--big text--huge">Morgan Oakley (@morgan)</div>
+            </div>
+         </div>
+         <div class="header__action-buttons text--small text--primary">
+            <button id="newButton">New</button>
+            <button id="uploadButton">Upload</button>
+            <button id="shareButton">Share</button>
+         </div>
+       </div>
+       <div class="main-content">
+          <div class="main-content__my-project">
+             <p class="main-content__my-project-title text--primary text--big">Your project</p>
+            <div class="cards">
+               <div class="card">
+                  <div class="card__title text--primary text--medium">Super Cool project</div>
+                  <div class="card__content text--secondary text--small">Cupiditate itaque neque nesciunt vero, totam et amet sint ea consequuntur reprehenderit, distinctio ut qui labore corporis molestiae cumque veritatis fugit voluptate.</div>
+                  <div class="card__icons">
+                     <div class="card__icon card__icon--star">
+                        <iconify-icon icon="fluent:star-add-24-regular" width="24" height="24"></iconify-icon>
+                     </div> 
+                     <div class="card_icon card_icon--eye">
+                        <iconify-icon icon="ix:add-eye" width="24" height="24"></iconify-icon>
+                     </div>
+                     <div class="card_icon card_icon--connnect">
+                        <iconify-icon icon="icon-park-outline:connection-point" width="24" height="24"></iconify-icon>
+                     </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card__title text--primary text--medium">Less Cool project</div>
+                  <div class="card__content text--secondary text--small">Aipisicing elit. Cupiditate itaque neque nesciunt vero, totam et amet sint ea consequuntur reprehenderit, distinctio ut qui labore corporis molestiae cumque veritatis fugit voluptate.</div>
+                  <div class="card__icons">
+                     <div class="card__icon card__icon--star">
+                        <iconify-icon icon="fluent:star-add-24-regular" width="24" height="24"></iconify-icon>
+                     </div> 
+                     <div class="card_icon card_icon--eye">
+                        <iconify-icon icon="ix:add-eye" width="24" height="24"></iconify-icon>
+                     </div>
+                     <div class="card_icon card_icon--connnect">
+                        <iconify-icon icon="icon-park-outline:connection-point" width="24" height="24"></iconify-icon>
+                     </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card__title text--primary text--medium">Impossible App</div>
+                  <div class="card__content text--secondary text--extra-small">Neque nesciunt vero, totam et amet sint ea consequuntur reprehenderit, distinctio ut qui labore corporis molestiae cumque veritatis fugit voluptate.</div>
+                  <div class="card__icons">
+                     <div class="card__icon card__icon--star">
+                        <iconify-icon icon="fluent:star-add-24-regular" width="24" height="24"></iconify-icon>
+                     </div> 
+                     <div class="card_icon card_icon--eye">
+                        <iconify-icon icon="ix:add-eye" width="24" height="24"></iconify-icon>
+                     </div>
+                     <div class="card_icon card_icon--connnect">
+                        <iconify-icon icon="icon-park-outline:connection-point" width="24" height="24"></iconify-icon>
+                     </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card__title text--primary text--medium">Easy Peasy App</div>
+                  <div class="card__content text--secondary text--extra-small">Lorem ipsum, dolor sit amet consectetur at amet sint ea consequuntur reprehenderit, distinctio ut qui labore corporis molestiae cumque veritatis fugit voluptate.</div>
+                  <div class="card__icons">
+                     <div class="card__icon card__icon--star">
+                        <iconify-icon icon="fluent:star-add-24-regular" width="24" height="24"></iconify-icon>
+                     </div> 
+                     <div class="card_icon card_icon--eye">
+                        <iconify-icon icon="ix:add-eye" width="24" height="24"></iconify-icon>
+                     </div>
+                     <div class="card_icon card_icon--connnect">
+                        <iconify-icon icon="icon-park-outline:connection-point" width="24" height="24"></iconify-icon>
+                     </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card__title text--primary text--medium">Ad Blocker</div>
+                  <div class="card__content text--secondary text--extra-small">Lo nesciunt vero, totam et amet sint ea consequuntur reprehenderit, distinctio ut qui labore corporis molestiae cumque veritatis fugit voluptate.</div>
+                  <div class="card__icons">
+                     <div class="card__icon card__icon--star">
+                        <iconify-icon icon="fluent:star-add-24-regular" width="24" height="24"></iconify-icon>
+                     </div> 
+                     <div class="card_icon card_icon--eye">
+                        <iconify-icon icon="ix:add-eye" width="24" height="24"></iconify-icon>
+                     </div>
+                     <div class="card_icon card_icon--connnect">
+                        <iconify-icon icon="icon-park-outline:connection-point" width="24" height="24"></iconify-icon>
+                     </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card__title text--primary text--medium">Money Maker</div>
+                  <div class="card__content text--secondary text--extra-small">Dolor sit amet consectetur adipisicing elit. Cupiditate itaque neque nesciunt vero, totam et amet sint ea consequuntur reprehenderit, distinctio ut qui labore corporis molestiae cumque veritatis fugit voluptate.</div>
+                  <div class="card__icons">
+                     <div class="card__icon card__icon--star">
+                        <iconify-icon icon="fluent:star-add-24-regular" width="24" height="24"></iconify-icon>
+                     </div> 
+                     <div class="card_icon card_icon--eye">
+                        <iconify-icon icon="ix:add-eye" width="24" height="24"></iconify-icon>
+                     </div>
+                     <div class="card_icon card_icon--connnect">
+                        <iconify-icon icon="icon-park-outline:connection-point" width="24" height="24"></iconify-icon>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="main-content__side-information">
+            <p class="main-content__announcement-title text--primary text--big">Announcement</p>
+            <div class="main-content__announcements">
+               <div class="main-content__announcement">
+                  <p class="main-content__announcement-title text--primary">Site Maintenance</p>
+                  <p class="main-content__announcement-content text--secondary text--tiny">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel id labore ut pariatur illum aliquam, consectetur dolorum molestias inventore ipsam!</p>
+               </div>
+               <div class="main-content__announcement">
+                  <p class="main-content__announcement-title text--primary">Community Share Day</p>
+                  <p class="main-content__announcement-content text--secondary text--tiny">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, dignissimos delectus natus iste harum quas? Amet aperiam iusto dignissimos eligendi!</p>
+               </div>
+               <div class="main-content__announcement">
+                  <p class="main-content__announcement-title text--primary">Updated Privacy Policy</p>
+                  <p class="main-content__announcement-content text--secondary text--tiny">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi earum at reiciendis, rem quisquam debitis minima eos vero assumenda mollitia.</p>
+               </div>
+            </div>
+            
+            <p class="main-content__trending-title text--primary text--big">Trending</p>
+            <div class="main-content__trending">
+               <div class="main-content__trending-project">
+                  <div class="main-content__trending-project-user-profile">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQjrAC_AwxmJIaQeGI-68-fSoXmQYZmjJQNA&s" alt="trending user profile">
+                  </div>
+                  <div class="main-content__trending-project-user-name text--extra-small">@tegan</div>
+                  <div class="main-content__trending-project-name text--secondary text--small">World Peace Puilder</div>
+               </div>
+               <div class="main-content__trending-project">
+                  <div class="main-content__trending-project-user-profile">
+                     <img src="https://clipart-library.com/images/qcBorqyXi.gif" alt="trending user profile">
+                  </div>
+                  <div class="main-content__trending-project-user-name text--extra-small">@morgan</div>
+                  <div class="main-content__trending-project-name text--secondary text--small">Super Cool Project</div>
+               </div>
+               <div class="main-content__trending-project">
+                  <div class="main-content__trending-project-user-profile">
+                     <img src="data:image/jpeg;base64,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" alt="trending user profile">
+                  </div>
+                  <div class="main-content__trending-project-user-name text--extra-small">@kendall</div>
+                  <div class="main-content__trending-project-name text--secondary text--small">Life Changing App</div>
+               </div>
+               <div class="main-content__trending-project">
+                  <div class="main-content__trending-project-user-profile">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxhc6A28niQQpXR33Op-WmhrNCiho3SUPX1A&s" alt="trending user profile">
+                  </div>
+                  <div class="main-content__trending-project-user-name text--extra-small">@alex</div>
+                  <div class="main-content__trending-project-name text--secondary text--small">No Traffic Maker</div>
+               </div>
+            </div>
+         </div>
+       </div>
+    </main>
+ </body>
+ </html>
